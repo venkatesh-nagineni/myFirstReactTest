@@ -1,0 +1,9 @@
+.idea
+.vscode
+node_modules
+*.log
+*.css
+public/*.css
+public/*.js
+build/
+test/coverage

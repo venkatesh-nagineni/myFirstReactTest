@@ -1,0 +1,46 @@
+{
+  "root": true,
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true,
+      "jsx": true
+    }
+  },
+  "env": {
+    "browser": true
+  },
+  "plugins": [
+    "react"
+  ],
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": "conf/webpack.config.js"
+      }
+    }
+  },
+  "extends": ["airbnb-base", "plugin:react/recommended"],
+  "rules": {
+    "import/extensions": ["error", "always", {
+      "js": "never"
+    }],
+    "no-debugger": 1,
+    "no-console": 1,
+    "no-trailing-spaces": "error",
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "semi": [
+      "error",
+      "always"
+    ],
+    "indent": ["error", 4],
+    "no-multiple-empty-lines": ["error", { "max": 1, "maxBOF": 1 }],
+    "linebreak-style": 0,
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error"
+  }
+}
